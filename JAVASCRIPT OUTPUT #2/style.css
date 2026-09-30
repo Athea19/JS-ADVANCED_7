@@ -1,0 +1,136 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 25px 20px;
+    color: #111;
+    background-color: #fff;
+}
+
+h1 {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+
+/* Form Section */
+.form-container {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.form-group {
+    display: flex;
+    align-items: center;
+}
+
+.form-group label {
+    width: 110px;
+    font-size: 16px;
+    font-weight: normal;
+}
+
+.form-group input {
+    width: 180px;
+    height: 22px;
+    font-size: 15px;
+    padding: 1px 4px;
+    border: 1px solid #767676;
+    border-radius: 2px;
+    box-sizing: border-box;
+}
+
+.form-buttons {
+    margin-top: 6px;
+    margin-left: 110px;
+    display: flex;
+    gap: 6px;
+}
+
+button {
+    font-family: inherit;
+    font-size: 13px;
+    padding: 3px 10px;
+    cursor: pointer;
+    background-color: #efefef;
+    border: 1px solid #767676;
+    border-radius: 3px;
+}
+
+button:hover {
+    background-color: #e5e5e5;
+}
+
+button:active {
+    background-color: #d8d8d8;
+}
+
+/* Fieldset and Table */
+.records-fieldset {
+    margin-top: 25px;
+    width: calc(100% - 35px);
+    min-height: 180px;
+    padding: 15px 20px;
+    border: 1px solid #767676;
+    box-sizing: border-box;
+}
+
+legend {
+    font-size: 16px;
+    padding: 0 4px;
+}
+
+#recordsTable {
+    margin: 10px auto;
+    border-collapse: collapse;
+    border: 1px solid #555;
+    min-width: 580px;
+}
+
+#recordsTable th,
+#recordsTable td {
+    border: 1px solid #555;
+    padding: 5px 12px;
+    font-size: 15px;
+}
+
+#recordsTable th {
+    font-weight: bold;
+    text-align: center;
+    background-color: #fff;
+}
+
+#recordsTable td.text-left {
+    text-align: left;
+}
+
+#recordsTable td.text-center {
+    text-align: center;
+}
+
+.action-cell {
+    text-align: center;
+    white-space: nowrap;
+}
+
+.action-cell button {
+    margin: 0 2px;
+    padding: 2px 7px;
+    font-size: 12px;
+}
+
+/* Bottom Controls */
+.bottom-controls {
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 15px;
+}
+
+.bottom-controls select {
+    height: 24px;
+    font-size: 13px;
+    border: 1px solid #767676;
+    border-radius: 2px;
+    padding: 1px 4px;
+}

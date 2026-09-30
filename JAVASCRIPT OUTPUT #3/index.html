@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript 3</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Javascript Web Output #3</h1>
+
+    <div class="button-group">
+        <button id="loadBtn">Load data from the API</button>
+        <button id="clearBtn">Clear Table</button>
+    </div>
+
+    <p class="api-info">
+        <strong>API:</strong>
+        <a href="https://jsonplaceholder.typicode.com/todos/" target="_blank">https://jsonplaceholder.typicode.com/todos/</a>
+    </p>
+
+    <div id="statusMessage" class="status-message"></div>
+
+    <table id="todoTable">
+        <thead>
+            <tr>
+                <th>User ID</th>
+                <th>Task ID</th>
+                <th>Title</th>
+                <th>Status</th>
+            </tr>
+        </thead>
+        <tbody id="todoBody">
+            <!-- Dynamically loaded, initially empty -->
+        </tbody>
+    </table>
+
+    <script src="script.js"></script>
+</body>
+</html>

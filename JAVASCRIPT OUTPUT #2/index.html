@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript 2</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Javascript Web Output #2</h1>
+
+    <div class="form-container">
+        <div class="form-group">
+            <label for="firstName">First Name:</label>
+            <input type="text" id="firstName">
+        </div>
+
+        <div class="form-group">
+            <label for="middleName">Middle Name:</label>
+            <input type="text" id="middleName">
+        </div>
+
+        <div class="form-group">
+            <label for="lastName">Last Name:</label>
+            <input type="text" id="lastName">
+        </div>
+
+        <div class="form-group">
+            <label for="age">Age:</label>
+            <input type="number" id="age" min="1">
+        </div>
+
+        <div class="form-buttons">
+            <button id="updateBtn">Update</button>
+            <button id="clearBtn">Clear</button>
+        </div>
+    </div>
+
+    <fieldset class="records-fieldset">
+        <legend>Records</legend>
+
+        <table id="recordsTable">
+            <thead>
+                <tr>
+                    <th>First Name</th>
+                    <th>Middle Name</th>
+                    <th>Last Name</th>
+                    <th>Age</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody id="recordsBody">
+                <!-- Dynamically populated, initially empty -->
+            </tbody>
+        </table>
+    </fieldset>
+
+    <div class="bottom-controls">
+        <button id="clearRecordsBtn">Clear Records</button>
+
+        <label for="sortField">Sort by:</label>
+        <select id="sortField">
+            <option value="lastName">Last Name</option>
+            <option value="firstName">First Name</option>
+            <option value="middleName">Middle Name</option>
+            <option value="age">Age</option>
+        </select>
+
+        <select id="sortOrder">
+            <option value="asc">A-Z</option>
+            <option value="desc">Z-A</option>
+        </select>
+
+        <button id="saveLocalStorageBtn">Save to Local Storage</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
